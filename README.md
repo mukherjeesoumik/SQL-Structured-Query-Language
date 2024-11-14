@@ -7,7 +7,7 @@ Structured Query Language(SQL), as we all know, is the database language by whic
 
 #### Though many resources claim there to be another category of SQL clauses TCL – Transaction Control Language, so we will see in detail about TCL as well.
 !
-[sql]()
+[sql](https://github.com/soumikjee/SQL-commands/blob/main/Screenshot_20241112_103607_Instagram.jpg)
 ### DDL (Data Definition Language):
 DDL or Data Definition Language consists of the SQL commands used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in the database. These commands usually are not used by a general user, who should be accessing the database via an application.
 
