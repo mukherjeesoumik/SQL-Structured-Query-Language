@@ -1,5 +1,5 @@
 # SQL | DDL, DQL, DML, DCL and TCL Commands
-``cs
+cs
 CREATE TABLE emp (
     EMPNO INT PRIMARY KEY,
     ENAME VARCHAR(50),
