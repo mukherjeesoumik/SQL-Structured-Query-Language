@@ -1,5 +1,5 @@
 # SQL | DDL, DQL, DML, DCL and TCL Commands
-cs
+```cs
 CREATE TABLE emp (
     EMPNO INT PRIMARY KEY,
     ENAME VARCHAR(50),
@@ -39,7 +39,7 @@ INSERT INTO dept (DEPTNO, DNAME, LOC) VALUES
 (30, 'SALES', 'CHICAGO'),
 (40, 'OPERATIONS', 'BOSTON');
 
-``
+```
 
 Structured Query Language(SQL), as we all know, is the database language by which we can perform certain operations on the existing database. Also, we can use this language to create a database. SQL uses specific commands like Create, Drop, Insert, etc., to carry out the required tasks.
 1. **DDL** – Data Definition Language
