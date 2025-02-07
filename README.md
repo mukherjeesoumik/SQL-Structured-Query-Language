@@ -2,6 +2,13 @@
 
 #databse name is sqlplus 
 
+```cs
+create database sqlplus
+
+use sqlplus
+
+```
+
 #emp table
 ```cs
 CREATE TABLE emp (
