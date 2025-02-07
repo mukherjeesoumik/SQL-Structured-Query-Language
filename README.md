@@ -1,4 +1,8 @@
 # SQL | DDL, DQL, DML, DCL and TCL Commands
+
+#databse name is sqlplus 
+
+#emp table
 ```cs
 CREATE TABLE emp (
     EMPNO INT PRIMARY KEY,
@@ -26,6 +30,12 @@ INSERT INTO emp (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) VALUES
 (7900, 'JAMES', 'CLERK', 7698, '1981-12-03', 950.00, NULL, 30),
 (7902, 'FORD', 'ANALYST', 7566, '1981-12-03', 3000.00, NULL, 20),
 (7934, 'MILLER', 'CLERK', 7782, '1982-01-23', 1300.00, NULL, 10);
+
+```
+
+#dept table
+
+```
 
 CREATE TABLE dept (
     DEPTNO INT PRIMARY KEY,
