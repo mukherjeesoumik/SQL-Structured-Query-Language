@@ -171,7 +171,7 @@ WHERE e.JOB = 'CLERK';
 ```
 # SQL | DDL, DQL, DML, DCL and TCL Commands
 
-+------------------+--------------------------+
+
 | Command Type     | Description              |
 +------------------+--------------------------+
 | DDL (Data        | Defines the database     |
