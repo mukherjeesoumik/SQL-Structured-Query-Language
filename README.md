@@ -243,7 +243,8 @@ SET TRANSACTION: Used to specify characteristics for the transaction.
 ## Data Definition Language (DDL)
 Commands:
 
-CREATE: Creates a new table, view, index, or other database objects.
+CREATE: 
+Creates a new table, view, index, or other database objects.
 
 ```cs
 CREATE TABLE employees (
@@ -253,13 +254,15 @@ CREATE TABLE employees (
     department VARCHAR(100)
 );
 ```
-ALTER: Modifies an existing database object.
+ALTER: 
+Modifies an existing database object.
 
 
 ```cs
 ALTER TABLE employees ADD COLUMN hire_date DATE;
 ```
-DROP: Deletes an existing database object.
+DROP: 
+Deletes an existing database object.
 
 ```cs
 DROP TABLE employees;
@@ -267,7 +270,8 @@ DROP TABLE employees;
 ## Data Query Language (DQL)
 Commands:
 
-SELECT: Retrieves data from a database.
+SELECT: 
+Retrieves data from a database.
 
 ```cs
 SELECT name, salary FROM employees WHERE department = 'Sales';
@@ -275,18 +279,21 @@ SELECT name, salary FROM employees WHERE department = 'Sales';
 ## Data Manipulation Language (DML)
 Commands:
 
-INSERT: Inserts new data into a table.
+INSERT: 
+Inserts new data into a table.
 
 ```cs
 INSERT INTO employees (name, salary, department)
 VALUES ('John Doe', 75000, 'Sales');
 ```
-UPDATE: Updates existing data within a table.
+UPDATE: 
+Updates existing data within a table.
 
 ```cs
 UPDATE employees SET salary = 80000 WHERE id = 1;
 ```
-DELETE: Deletes data from a table.
+DELETE: 
+Deletes data from a table.
 
 ```cs
 DELETE FROM employees WHERE id = 1;
@@ -294,12 +301,14 @@ DELETE FROM employees WHERE id = 1;
 ## Data Control Language (DCL)
 Commands:
 
-GRANT: Grants permissions to a user.
+GRANT: 
+Grants permissions to a user.
 
 ```cs
 GRANT SELECT, INSERT ON employees TO 'username'@'host';
 ```
-REVOKE: Revokes permissions from a user.
+REVOKE: 
+Revokes permissions from a user.
 
 ```cs
 REVOKE SELECT, INSERT ON employees FROM 'username'@'host';
@@ -307,17 +316,20 @@ REVOKE SELECT, INSERT ON employees FROM 'username'@'host';
 ## Transaction Control Language (TCL)
 Commands:
 
-COMMIT: Saves the transaction changes to the database.
+COMMIT: 
+Saves the transaction changes to the database.
 
 ```cs
 COMMIT;
 ```
-ROLLBACK: Undoes the transaction changes.
+ROLLBACK: 
+Undoes the transaction changes.
 
 ```cs
 ROLLBACK;
 ```
-SAVEPOINT: Sets a point within a transaction to which you can roll back.
+SAVEPOINT: 
+Sets a point within a transaction to which you can roll back.
 
 ```cs
 SAVEPOINT savepoint_name;
