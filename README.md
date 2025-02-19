@@ -1,5 +1,7 @@
 # SQL | DDL, DQL, DML, DCL and TCL Commands
 
+## emp
+
 | EMPNO | ENAME  | JOB      | MGR  | HIREDATE   | SAL    | COMM   | DEPTNO |
 |-------|--------|----------|------|------------|--------|--------|--------|
 | 7369  | SMITH  | CLERK    | 7902 | 1980-12-17 | 800.00 | NULL   | 20     |
@@ -17,15 +19,13 @@
 | 7902  | FORD   | ANALYST  | 7566 | 1981-12-03 | 3000.00| NULL   | 20     |
 | 7934  | MILLER | CLERK    | 7782 | 1982-01-23 | 1300.00| NULL   | 10     |
 
+## dept
 
 | DEPTNO | DNAME      | LOC       |
 |--------|------------|-----------|
 | 10     | ACCOUNTING | NEW YORK  |
-|--------|------------|-----------|
 | 20     | RESEARCH   | DALLAS    |
-|--------|------------|-----------|
 | 30     | SALES      | CHICAGO   |
-|--------|------------|-----------|
 | 40     | OPERATIONS | BOSTON    |
 
 
