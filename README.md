@@ -172,35 +172,7 @@ WHERE e.JOB = 'CLERK';
 # SQL | DDL, DQL, DML, DCL and TCL Commands
 
 
-| Command Type     | Description              |
-+------------------+--------------------------+
-| DDL (Data        | Defines the database     |
-| Definition       | schema structure         |
-| Language)        |                          |
-|                  | Examples: CREATE, ALTER, |
-|                  | DROP                     |
-+------------------+--------------------------+
-| DQL (Data Query  | Retrieves data from the  |
-| Language)        | database                 |
-|                  | Example: SELECT          |
-+------------------+--------------------------+
-| DML (Data        | Manipulates data within  |
-| Manipulation     | the database             |
-| Language)        |                          |
-|                  | Examples: INSERT, UPDATE,|
-|                  | DELETE                   |
-+------------------+--------------------------+
-| DCL (Data        | Manages access control   |
-| Control          | to the database          |
-| Language)        |                          |
-|                  | Examples: GRANT, REVOKE  |
-+------------------+--------------------------+
-| TCL (Transaction | Manages transactions     |
-| Control          | within the database      |
-| Language)        |                          |
-|                  | Examples: COMMIT,        |
-|                  | ROLLBACK                 |
-+------------------+--------------------------+
+
 
 
 ## 1. DDL (Data Definition Language)
