@@ -179,11 +179,36 @@ Common DDL commands:
 
 CREATE: Used to create new tables, views, or databases.
 
+-----------------------------------
+CREATE TABLE employees (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    salary DECIMAL(10, 2),
+    department VARCHAR(100)
+);
+-----------------------------------
+
 ALTER: Used to modify existing database objects like tables.
+
+-----------------------------------
+
+ALTER TABLE employees ADD COLUMN hire_date DATE;
+
+-----------------------------------
+
 
 DROP: Used to delete tables, views, or databases.
 
+-----------------------------------
+
+DROP TABLE employees;
+
+-----------------------------------
+
+
 TRUNCATE: Used to remove all records from a table without deleting the table itself.
+
+
 ```
 ## 2. DQL (Data Query Language)
 DQL commands are used to query the database and retrieve data. The primary command in this category is SELECT.
@@ -191,6 +216,9 @@ DQL commands are used to query the database and retrieve data. The primary comma
 Common DQL command:
 ```cs
 SELECT: Used to fetch data from one or more tables.
+
+----SELECT name, salary FROM employees WHERE department = 'Sales';
+
 ```
 
 ## 3. DML (Data Manipulation Language) 
