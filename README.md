@@ -66,6 +66,8 @@ Structured Query Language(SQL), as we all know, is the database language by whic
 
 #### Though many resources claim there to be another category of SQL clauses TCL – Transaction Control Language, so we will see in detail about TCL as well.
 
+# JOIN
+
 -- 1. INNER JOIN with Filter
 -- Query: Retrieve employee details along with their department name and location, where the employee salary is greater than 2000.
 ```cs
