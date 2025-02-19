@@ -155,7 +155,7 @@ WHERE e.JOB = 'CLERK';
 ```
 # SQL | DDL, DQL, DML, DCL and TCL Commands
 
-1. DDL (Data Definition Language)
+## 1. DDL (Data Definition Language)
 DDL commands are used to define and manage database structures such as tables, indexes, and schemas. They are responsible for setting up the schema and defining the data structures.
 
 Common DDL commands:
@@ -169,7 +169,7 @@ DROP: Used to delete tables, views, or databases.
 
 TRUNCATE: Used to remove all records from a table without deleting the table itself.
 ```
-2. DQL (Data Query Language)
+## 2. DQL (Data Query Language)
 DQL commands are used to query the database and retrieve data. The primary command in this category is SELECT.
 
 Common DQL command:
@@ -177,7 +177,7 @@ Common DQL command:
 SELECT: Used to fetch data from one or more tables.
 ```
 
-3. DML (Data Manipulation Language) 
+## 3. DML (Data Manipulation Language) 
 DML commands are used for manipulating data in existing database objects. These commands deal with data manipulation and are responsible for the actual data stored in the database.
 
 Common DML commands:
@@ -190,7 +190,7 @@ UPDATE: Used to modify existing data within a table.  <br>
 
 DELETE: Used to remove data from a table.
 ```
-4. DCL (Data Control Language)
+## 4. DCL (Data Control Language)
 DCL commands deal with the rights, permissions, and other controls of the database system. They are used to control access to data.
 
 Common DCL commands:
@@ -201,7 +201,7 @@ REVOKE: Used to remove user access privileges granted by the GRANT command.
 
 ```
 
-5. TCL (Transaction Control Language)
+ 5. TCL (Transaction Control Language)
 TCL commands are used to manage transactions in the database. They ensure the integrity of data and manage changes to the database.
 
 Common TCL commands:
