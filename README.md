@@ -243,7 +243,7 @@ SET TRANSACTION: Used to specify characteristics for the transaction.
 ## Data Definition Language (DDL)
 Commands:
 
-CREATE: 
+CREATE: <br>
 Creates a new table, view, index, or other database objects.
 
 ```cs
@@ -254,14 +254,14 @@ CREATE TABLE employees (
     department VARCHAR(100)
 );
 ```
-ALTER: 
+ALTER: <br>
 Modifies an existing database object.
 
 
 ```cs
 ALTER TABLE employees ADD COLUMN hire_date DATE;
 ```
-DROP: 
+DROP: <br>
 Deletes an existing database object.
 
 ```cs
@@ -270,7 +270,7 @@ DROP TABLE employees;
 ## Data Query Language (DQL)
 Commands:
 
-SELECT: 
+SELECT: <br>
 Retrieves data from a database.
 
 ```cs
@@ -279,20 +279,20 @@ SELECT name, salary FROM employees WHERE department = 'Sales';
 ## Data Manipulation Language (DML)
 Commands:
 
-INSERT: 
+INSERT: <br>
 Inserts new data into a table.
 
 ```cs
 INSERT INTO employees (name, salary, department)
 VALUES ('John Doe', 75000, 'Sales');
 ```
-UPDATE: 
+UPDATE: <br>
 Updates existing data within a table.
 
 ```cs
 UPDATE employees SET salary = 80000 WHERE id = 1;
 ```
-DELETE: 
+DELETE: <br>
 Deletes data from a table.
 
 ```cs
@@ -301,13 +301,13 @@ DELETE FROM employees WHERE id = 1;
 ## Data Control Language (DCL)
 Commands:
 
-GRANT: 
+GRANT: <br>
 Grants permissions to a user.
 
 ```cs
 GRANT SELECT, INSERT ON employees TO 'username'@'host';
 ```
-REVOKE: 
+REVOKE: <br>
 Revokes permissions from a user.
 
 ```cs
@@ -316,13 +316,13 @@ REVOKE SELECT, INSERT ON employees FROM 'username'@'host';
 ## Transaction Control Language (TCL)
 Commands:
 
-COMMIT: 
+COMMIT: <br>
 Saves the transaction changes to the database.
 
 ```cs
 COMMIT;
 ```
-ROLLBACK: 
+ROLLBACK: <br>
 Undoes the transaction changes.
 
 ```cs
