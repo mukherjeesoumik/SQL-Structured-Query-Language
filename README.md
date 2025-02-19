@@ -201,7 +201,7 @@ REVOKE: Used to remove user access privileges granted by the GRANT command.
 
 ```
 
- 5. TCL (Transaction Control Language)
+## 5. TCL (Transaction Control Language)
 TCL commands are used to manage transactions in the database. They ensure the integrity of data and manage changes to the database.
 
 Common TCL commands:
