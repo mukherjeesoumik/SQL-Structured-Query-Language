@@ -240,7 +240,7 @@ SET TRANSACTION: Used to specify characteristics for the transaction.
 ```
 # Commands:
 
-Data Definition Language (DDL)
+## Data Definition Language (DDL)
 Commands:
 
 CREATE: Creates a new table, view, index, or other database objects.
@@ -264,7 +264,7 @@ DROP: Deletes an existing database object.
 ```cs
 DROP TABLE employees;
 ```
-Data Query Language (DQL)
+## Data Query Language (DQL)
 Commands:
 
 SELECT: Retrieves data from a database.
@@ -272,7 +272,7 @@ SELECT: Retrieves data from a database.
 ```cs
 SELECT name, salary FROM employees WHERE department = 'Sales';
 ```
-Data Manipulation Language (DML)
+## Data Manipulation Language (DML)
 Commands:
 
 INSERT: Inserts new data into a table.
@@ -291,7 +291,7 @@ DELETE: Deletes data from a table.
 ```cs
 DELETE FROM employees WHERE id = 1;
 ```
-Data Control Language (DCL)
+## Data Control Language (DCL)
 Commands:
 
 GRANT: Grants permissions to a user.
@@ -304,7 +304,7 @@ REVOKE: Revokes permissions from a user.
 ```cs
 REVOKE SELECT, INSERT ON employees FROM 'username'@'host';
 ```
-Transaction Control Language (TCL)
+## Transaction Control Language (TCL)
 Commands:
 
 COMMIT: Saves the transaction changes to the database.
