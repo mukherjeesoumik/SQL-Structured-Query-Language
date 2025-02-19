@@ -207,9 +207,4 @@ ROLLBACK: Used to undo the changes made in the current transaction.
 SAVEPOINT: Used to set a savepoint within a transaction, allowing for partial rollbacks.
 
 SET TRANSACTION: Used to specify characteristics for the transaction.
-```cs
-SELECT e.EMPNO, e.ENAME, d.DNAME, d.LOC
-FROM emp e
-CROSS JOIN dept d
-WHERE e.JOB = 'CLERK';
-```
+
