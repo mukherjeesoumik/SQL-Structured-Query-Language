@@ -326,7 +326,7 @@ LEFT JOIN emp e2 ON e1.MGR = e2.EMPNO
 WHERE e2.ENAME = 'KING';
 ```
 
-6. CROSS JOIN with Filter
+6. CROSS JOIN with Filter <br>
 -- Query: Retrieve all possible combinations of employees and departments, where the employee job is 'CLERK'.
 
 ```cs
