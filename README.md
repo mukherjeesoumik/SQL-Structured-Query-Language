@@ -88,13 +88,29 @@ INSERT INTO dept (DEPTNO, DNAME, LOC) VALUES
 
 ```
 
-Structured Query Language(SQL), as we all know, is the database language by which we can perform certain operations on the existing database. Also, we can use this language to create a database. SQL uses specific commands like Create, Drop, Insert, etc., to carry out the required tasks.
-1. **DDL** – Data Definition Language
-2. **DQL** – Data Query Language
-3. **DML** – Data Manipulation Language
-4. **DCL** – Data Control Language
+## Order of execution in SQL queries
 
-#### Though many resources claim there to be another category of SQL clauses TCL – Transaction Control Language, so we will see in detail about TCL as well.
+```cs
+FROM: Determine the data source (tables or views) to use.
+
+JOIN: Combine data from multiple tables based on a related column.
+
+WHERE: Filter records based on specified conditions.
+
+GROUP BY: Aggregate data across rows that share a common attribute.
+
+HAVING: Filter groups based on specified conditions (used with GROUP BY).
+
+SELECT: Choose the columns to be returned.
+
+DISTINCT: Remove duplicate rows from the result.
+
+ORDER BY: Sort the result set.
+
+LIMIT/OFFSET: Specify the number of rows to return and where to start.
+
+```
+
 
 # JOIN
 
