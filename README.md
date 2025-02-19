@@ -159,6 +159,7 @@ WHERE e.JOB = 'CLERK';
 DDL commands are used to define and manage database structures such as tables, indexes, and schemas. They are responsible for setting up the schema and defining the data structures.
 
 Common DDL commands:
+```cs
 
 CREATE: Used to create new tables, views, or databases.
 
@@ -167,38 +168,45 @@ ALTER: Used to modify existing database objects like tables.
 DROP: Used to delete tables, views, or databases.
 
 TRUNCATE: Used to remove all records from a table without deleting the table itself.
-
+```
 2. DQL (Data Query Language)
 DQL commands are used to query the database and retrieve data. The primary command in this category is SELECT.
 
-Common DQL command: <br>
+Common DQL command:
+```cs
+SELECT: Used to fetch data from one or more tables.
+```
 
-SELECT: Used to fetch data from one or more tables. <br>
-
-3. DML (Data Manipulation Language) <br>
+3. DML (Data Manipulation Language) 
 DML commands are used for manipulating data in existing database objects. These commands deal with data manipulation and are responsible for the actual data stored in the database.
 
-Common DML commands: <br>
+Common DML commands:
+
+```cs
 
 INSERT: Used to add new data into a table. <br>
 
 UPDATE: Used to modify existing data within a table.  <br>
 
 DELETE: Used to remove data from a table.
-
+```
 4. DCL (Data Control Language)
 DCL commands deal with the rights, permissions, and other controls of the database system. They are used to control access to data.
 
 Common DCL commands:
-
+```cs
 GRANT: Used to provide users with access privileges to the database.
 
 REVOKE: Used to remove user access privileges granted by the GRANT command.
+
+```
 
 5. TCL (Transaction Control Language)
 TCL commands are used to manage transactions in the database. They ensure the integrity of data and manage changes to the database.
 
 Common TCL commands:
+
+```cs
 
 COMMIT: Used to save all changes made in the current transaction.
 
@@ -207,4 +215,6 @@ ROLLBACK: Used to undo the changes made in the current transaction.
 SAVEPOINT: Used to set a savepoint within a transaction, allowing for partial rollbacks.
 
 SET TRANSACTION: Used to specify characteristics for the transaction.
+
+```
 
