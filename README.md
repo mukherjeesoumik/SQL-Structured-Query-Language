@@ -191,9 +191,7 @@ CREATE TABLE employees (
 ALTER: Used to modify existing database objects like tables.
 
 -----------------------------------
-
 ALTER TABLE employees ADD COLUMN hire_date DATE;
-
 -----------------------------------
 
 
