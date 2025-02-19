@@ -179,30 +179,9 @@ Common DDL commands:
 
 CREATE: Used to create new tables, views, or databases.
 
------------------------------------
-CREATE TABLE employees (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    salary DECIMAL(10, 2),
-    department VARCHAR(100)
-);
------------------------------------
-
 ALTER: Used to modify existing database objects like tables.
 
------------------------------------
-ALTER TABLE employees ADD COLUMN hire_date DATE;
------------------------------------
-
-
 DROP: Used to delete tables, views, or databases.
-
------------------------------------
-
-DROP TABLE employees;
-
------------------------------------
-
 
 TRUNCATE: Used to remove all records from a table without deleting the table itself.
 
