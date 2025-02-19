@@ -280,7 +280,7 @@ SAVEPOINT savepoint_name;
 ```
 # JOIN
 
--- 1. INNER JOIN with Filter <br>
+1. INNER JOIN with Filter <br>
 -- Query: Retrieve employee details along with their department name and location, where the employee salary is greater than 2000.
 ```cs
 SELECT e.EMPNO, e.ENAME, e.JOB, e.SAL, d.DNAME, d.LOC
@@ -290,7 +290,7 @@ WHERE e.SAL > 2000;
 
 ```
 
--- 2. LEFT JOIN with Filter <br>
+2. LEFT JOIN with Filter <br>
 -- Query: Retrieve all employees and their respective department details, including employees who don't belong to any department, where the department is 'SALES'.
 
 ```cs
@@ -300,7 +300,7 @@ LEFT JOIN dept d ON e.DEPTNO = d.DEPTNO
 WHERE d.DNAME = 'SALES' OR d.DNAME IS NULL;
 
 ```
--- 3. RIGHT JOIN with Filter <br>
+3. RIGHT JOIN with Filter <br>
 -- Query: Retrieve all departments and their respective employees, including departments with no employees, where the employee job is 'MANAGER'.
 
 ```cs
@@ -309,7 +309,7 @@ FROM emp e
 RIGHT JOIN dept d ON e.DEPTNO = d.DEPTNO
 WHERE e.JOB = 'MANAGER' OR e.JOB IS NULL;
 ```
--- 4. FULL JOIN with Filter <br>
+4. FULL JOIN with Filter <br>
 -- Query: Retrieve all employees and their respective departments, including employees without departments and departments without employees, where the department location is 'CHICAGO'.
 ```cs
 SELECT e.EMPNO, e.ENAME, e.JOB, e.SAL, d.DNAME, d.LOC
@@ -317,7 +317,7 @@ FROM emp e
 FULL OUTER JOIN dept d ON e.DEPTNO = d.DEPTNO
 WHERE d.LOC = 'CHICAGO' OR d.LOC IS NULL;
 ```
--- 5. SELF JOIN with Filter <br>
+5. SELF JOIN with Filter <br>
 -- Query: Retrieve employee details along with their manager details, where the manager is 'KING'.
 ```cs
 SELECT e1.EMPNO, e1.ENAME, e1.JOB, e2.ENAME AS MANAGER_NAME
@@ -326,7 +326,7 @@ LEFT JOIN emp e2 ON e1.MGR = e2.EMPNO
 WHERE e2.ENAME = 'KING';
 ```
 
--- 6. CROSS JOIN with Filter
+6. CROSS JOIN with Filter
 -- Query: Retrieve all possible combinations of employees and departments, where the employee job is 'CLERK'.
 
 ```cs
