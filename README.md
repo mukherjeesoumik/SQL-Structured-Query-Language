@@ -138,8 +138,6 @@ Common DQL command:
 ```cs
 SELECT: Used to fetch data from one or more tables.
 
-----SELECT name, salary FROM employees WHERE department = 'Sales';
-
 ```
 
 ## 3. DML (Data Manipulation Language) 
