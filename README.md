@@ -171,18 +171,18 @@ TRUNCATE: Used to remove all records from a table without deleting the table its
 2. DQL (Data Query Language)
 DQL commands are used to query the database and retrieve data. The primary command in this category is SELECT.
 
-Common DQL command:
+Common DQL command: <br>
 
-SELECT: Used to fetch data from one or more tables.
+SELECT: Used to fetch data from one or more tables. <br>
 
-3. DML (Data Manipulation Language)
+3. DML (Data Manipulation Language) <br>
 DML commands are used for manipulating data in existing database objects. These commands deal with data manipulation and are responsible for the actual data stored in the database.
 
-Common DML commands:
+Common DML commands: <br>
 
-INSERT: Used to add new data into a table.
+INSERT: Used to add new data into a table. <br>
 
-UPDATE: Used to modify existing data within a table.
+UPDATE: Used to modify existing data within a table.  <br>
 
 DELETE: Used to remove data from a table.
 
