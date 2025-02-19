@@ -1,4 +1,4 @@
-# SQL | DDL, DQL, DML, DCL and TCL Commands
+# v
 
 ## emp
 
@@ -146,6 +146,67 @@ WHERE e2.ENAME = 'KING';
 
 -- 6. CROSS JOIN with Filter
 -- Query: Retrieve all possible combinations of employees and departments, where the employee job is 'CLERK'.
+
+```cs
+SELECT e.*, d.*
+FROM emp e
+CROSS JOIN dept d
+WHERE e.JOB = 'CLERK';
+```
+# SQL | DDL, DQL, DML, DCL and TCL Commands
+
+1. DDL (Data Definition Language)
+DDL commands are used to define and manage database structures such as tables, indexes, and schemas. They are responsible for setting up the schema and defining the data structures.
+
+Common DDL commands:
+
+CREATE: Used to create new tables, views, or databases.
+
+ALTER: Used to modify existing database objects like tables.
+
+DROP: Used to delete tables, views, or databases.
+
+TRUNCATE: Used to remove all records from a table without deleting the table itself.
+
+2. DQL (Data Query Language)
+DQL commands are used to query the database and retrieve data. The primary command in this category is SELECT.
+
+Common DQL command:
+
+SELECT: Used to fetch data from one or more tables.
+
+3. DML (Data Manipulation Language)
+DML commands are used for manipulating data in existing database objects. These commands deal with data manipulation and are responsible for the actual data stored in the database.
+
+Common DML commands:
+
+INSERT: Used to add new data into a table.
+
+UPDATE: Used to modify existing data within a table.
+
+DELETE: Used to remove data from a table.
+
+4. DCL (Data Control Language)
+DCL commands deal with the rights, permissions, and other controls of the database system. They are used to control access to data.
+
+Common DCL commands:
+
+GRANT: Used to provide users with access privileges to the database.
+
+REVOKE: Used to remove user access privileges granted by the GRANT command.
+
+5. TCL (Transaction Control Language)
+TCL commands are used to manage transactions in the database. They ensure the integrity of data and manage changes to the database.
+
+Common TCL commands:
+
+COMMIT: Used to save all changes made in the current transaction.
+
+ROLLBACK: Used to undo the changes made in the current transaction.
+
+SAVEPOINT: Used to set a savepoint within a transaction, allowing for partial rollbacks.
+
+SET TRANSACTION: Used to specify characteristics for the transaction.
 ```cs
 SELECT e.EMPNO, e.ENAME, d.DNAME, d.LOC
 FROM emp e
