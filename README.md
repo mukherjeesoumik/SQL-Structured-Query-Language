@@ -200,9 +200,9 @@ Common DML commands:
 
 ```cs
 
-INSERT: Used to add new data into a table. <br>
+INSERT: Used to add new data into a table. 
 
-UPDATE: Used to modify existing data within a table.  <br>
+UPDATE: Used to modify existing data within a table.  
 
 DELETE: Used to remove data from a table.
 ```
