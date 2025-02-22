@@ -436,6 +436,97 @@ WHERE ENAME LIKE '%SMITH%' OR ENAME LIKE '%KING%';
 ```
 
 
+# SUBQUERY in SQL are queries nested inside another query
+
+
+### 1. Single-row Subquery
+A single-row subquery returns only one row. Example:
+
+```cs
+SELECT ENAME, JOB
+FROM employees
+WHERE SAL = (SELECT MAX(SAL) FROM employees);
+```
+Explanation: This query retrieves the name and job of the employee with the highest salary.
+
+### 2. Multiple-row Subquery
+A multiple-row subquery returns multiple rows. Example:
+
+```cs
+SELECT ENAME, JOB
+FROM employees
+WHERE DEPTNO IN (SELECT DEPTNO FROM employees WHERE SAL > 2500);
+```
+Explanation: This query retrieves the names and jobs of employees who are in departments where at least one employee earns more than 2500.
+
+### 3. Correlated Subquery
+A correlated subquery references columns from the outer query. Example:
+
+```cs
+SELECT ENAME, SAL
+FROM employees e1
+WHERE SAL > (SELECT AVG(SAL) FROM employees e2 WHERE e2.DEPTNO = e1.DEPTNO);
+```
+Explanation: This query retrieves the names and salaries of employees who earn more than the average salary in their department.
+
+### 4. Scalar Subquery
+A scalar subquery returns a single value. Example:
+
+```cs
+SELECT ENAME, SAL, (SELECT DEPTNAME FROM departments WHERE DEPTNO = e.DEPTNO) AS DEPTNAME
+FROM employees e;
+```
+Explanation: This query retrieves the names, salaries, and department names of employees.
+
+### 5. Subquery in the FROM Clause
+A subquery can be used in the FROM clause as a derived table. Example:
+
+```cs
+SELECT DEPTNO, AVG(SAL) as avg_salary
+FROM (SELECT DEPTNO, SAL FROM employees WHERE JOB = 'CLERK') sub
+GROUP BY DEPTNO;
+```
+Explanation: This query calculates the average salary of clerks in each department.
+
+### 6. Subquery in the SELECT Clause
+A subquery can be used in the SELECT clause to return a value for each row. Example:
+
+```cs
+SELECT ENAME, SAL, (SELECT AVG(SAL) FROM employees WHERE DEPTNO = e.DEPTNO) AS dept_avg_salary
+FROM employees e;
+```
+Explanation: This query retrieves the names, salaries, and average salary of the employees' departments.
+
+### 7. Subquery with EXISTS
+The EXISTS keyword is used to check if a subquery returns any rows. Example:
+
+```cs
+SELECT ENAME, JOB
+FROM employees e
+WHERE EXISTS (SELECT 1 FROM employees WHERE MGR = e.EMPNO);
+```
+Explanation: This query retrieves the names and jobs of employees who are managers.
+
+### 8. Subquery with ANY and ALL
+The ANY and ALL keywords are used to compare a value to any or all values in a subquery. Example with ANY:
+
+```
+SELECT ENAME, SAL
+FROM employees
+WHERE SAL > ANY (SELECT SAL FROM employees WHERE JOB = 'CLERK');
+```
+Explanation: This query retrieves the names and salaries of employees who earn more than any clerk.
+
+### Example with ALL:
+
+```cs
+SELECT ENAME, SAL
+FROM employees
+WHERE SAL > ALL (SELECT SAL FROM employees WHERE JOB = 'CLERK');
+```
+Explanation: This query retrieves the names and salaries of employees who earn more than all clerks.
+
+
 
 
 
