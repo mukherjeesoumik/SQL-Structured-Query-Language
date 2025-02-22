@@ -277,18 +277,19 @@ Sets a point within a transaction to which you can roll back.
 SAVEPOINT savepoint_name;
 ```
 
+# (Structured Query Language) -----
 
 ### Example 1: Simple SELECT Query
 Fetch all data from the employees table.
 
-```
+```cs
 SELECT *
 FROM employees;
 ```
 ### Example 2: SELECT with WHERE Clause
 Fetch all employees who are SALESMAN.
 
-```
+```cs
 SELECT *
 FROM employees
 WHERE JOB = 'SALESMAN';
@@ -296,20 +297,20 @@ WHERE JOB = 'SALESMAN';
 ### Example 3: SELECT with ORDER BY
 Fetch all employees and order them by salary in descending order.
 
-```
+```cs
 SELECT *
 FROM employees
 ORDER BY SAL DESC;
 ```
 fetch all employees and order them by salary in ascending order, you would use the ASC keyword instead of DESC. Here’s the correct query:
-```
+```cs
 SELECT *
 FROM employees
 ORDER BY SAL ASC;
 ```
 ### Example 4: SELECT with GROUP BY and HAVING
 Fetch the total salary for each department, but only include departments where the total salary is greater than 10,000.
-```
+```cs
 SELECT DEPTNO, SUM(SAL) as total_salary
 FROM employees
 GROUP BY DEPTNO
@@ -318,7 +319,7 @@ HAVING SUM(SAL) > 10000;
 ### Example 5: SELECT with Aggregate Functions
 Fetch the average salary and the count of employees in each department.
 
-```
+```cs
 SELECT DEPTNO, AVG(SAL) as average_salary, COUNT(*) as employee_count
 FROM employees
 GROUP BY DEPTNO;
@@ -326,7 +327,7 @@ GROUP BY DEPTNO;
 ### Example 6: SELECT with LIMIT
 Fetch the top 5 employees with the highest salary.
 
-```
+```cs
 SELECT *
 FROM employees
 ORDER BY SAL DESC
@@ -335,7 +336,7 @@ LIMIT 5;
 ### Example 7: UPDATE Query
 Update the salary of employees in the 'SALES' department by increasing it by 10%.
 
-```
+```cs
 UPDATE employees
 SET SAL = SAL * 1.10
 WHERE DEPTNO = 30;
@@ -343,14 +344,14 @@ WHERE DEPTNO = 30;
 ### Example 8: DELETE Query
 Delete all employees from the 'CLERK' job.
 
-```
+```cs
 DELETE FROM employees
 WHERE JOB = 'CLERK';
 ```
 ### Example 9: Using Arithmetic Operators
 Calculate the total compensation (salary + commission) for each employee.
 
-```
+```cs
 SELECT 
     EMPNO, 
     ENAME, 
@@ -362,7 +363,7 @@ FROM
 ### Example 10: Using Comparison Operators
 Fetch all employees where the salary is greater than 2000.
 
-```
+```cs
 SELECT 
     EMPNO, 
     ENAME, 
@@ -376,7 +377,7 @@ WHERE
 ### Example 11: Using Logical Operators
 Fetch all employees who are either MANAGER or their salary is greater than 2500.
 
-```
+```cs
 SELECT 
     EMPNO, 
     ENAME, 
@@ -390,7 +391,7 @@ WHERE
 ### Example 12: Using String Operators
 Concatenate employee name and job title.
 
-```
+```cs
 SELECT 
     EMPNO, 
     ENAME || ' - ' || JOB AS employee_details
@@ -400,7 +401,7 @@ FROM
 ### Example 13: Using BETWEEN Operator
 Fetch all employees whose salary is between 1000 and 3000.
 
-```
+```cs
 SELECT 
     EMPNO, 
     ENAME, 
@@ -414,7 +415,7 @@ WHERE
 ### Example 14: Using IN Operator
 Fetch all employees who are in department 10, 20, or 30.
 
-```
+```cs
 SELECT 
     EMPNO, 
     ENAME, 
@@ -428,7 +429,7 @@ WHERE
 ### Example 15: Using LIKE and OR Operators
 Fetch all employees whose names contain 'SMITH' or 'KING'.
 
-```
+```cs
 SELECT *
 FROM employees
 WHERE ENAME LIKE '%SMITH%' OR ENAME LIKE '%KING%';
