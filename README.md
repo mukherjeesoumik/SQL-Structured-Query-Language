@@ -334,7 +334,9 @@ CROSS JOIN dept d
 WHERE e.JOB = 'CLERK';
 ```
 
-1. INNER JOIN
+# JOIN Example:
+
+## 1. INNER JOIN  <br>
 Description: Returns records that have matching values in both tables.
 
 Example:
@@ -367,7 +369,7 @@ INNER JOIN Courses ON Students.StudentID = Courses.StudentID;
 | John        | History    |
 | Alice       | Science    |
 | Bob         | Math       |
-2. LEFT JOIN (or LEFT OUTER JOIN)
+## 2. LEFT JOIN (or LEFT OUTER JOIN)  <br>
 Description: Returns all records from the left table, and the matched records from the right table. The result is NULL from the right side if there is no match.
 
 Example:
@@ -401,7 +403,7 @@ LEFT JOIN Courses ON Students.StudentID = Courses.StudentID;
 | Alice       | Science    |
 | Bob         | Math       |
 | Alice       | NULL       |
-3. RIGHT JOIN (or RIGHT OUTER JOIN)
+## 3. RIGHT JOIN (or RIGHT OUTER JOIN)  <br>
 Description: Returns all records from the right table, and the matched records from the left table. The result is NULL from the left side when there is no match.
 
 Example:
@@ -435,7 +437,7 @@ RIGHT JOIN Courses ON Students.StudentID = Courses.StudentID;
 | Alice       | Science    |
 | Bob         | Math       |
 | NULL        | History    |
-4. FULL JOIN (or FULL OUTER JOIN)
+## 4. FULL JOIN (or FULL OUTER JOIN)  <br>
 Description: Returns all records when there is a match in either left or right table. The result is NULL from one side when there is no match.
 
 Example:
@@ -469,7 +471,7 @@ FULL OUTER JOIN Courses ON Students.StudentID = Courses.StudentID;
 | Alice       | Science    |
 | Bob         | Math       |
 | NULL        | History    |
-5. CROSS JOIN
+## 5. CROSS JOIN <br>
 Description: Returns the Cartesian product of the two tables, meaning it returns all possible combinations of rows from the two tables.
 
 Example:
