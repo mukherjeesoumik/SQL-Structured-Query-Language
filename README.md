@@ -358,10 +358,11 @@ sql
 | 104      | Math       | 3         |
 
 ---- Query ----
+```
 SELECT Students.StudentName, Courses.CourseName
 FROM Students
 INNER JOIN Courses ON Students.StudentID = Courses.StudentID;
-
+```
 ---- Result ----
 | StudentName | CourseName |
 |-------------|------------|
@@ -391,10 +392,11 @@ sql
 | 104      | Math       | 3         |
 
 ---- Query ----
+```
 SELECT Students.StudentName, Courses.CourseName
 FROM Students
 LEFT JOIN Courses ON Students.StudentID = Courses.StudentID;
-
+```
 ---- Result ----
 | StudentName | CourseName |
 |-------------|------------|
@@ -425,10 +427,11 @@ sql
 | 104      | Math       | 3         |
 
 ---- Query ----
+```
 SELECT Students.StudentName, Courses.CourseName
 FROM Students
 RIGHT JOIN Courses ON Students.StudentID = Courses.StudentID;
-
+```
 ---- Result ----
 | StudentName | CourseName |
 |-------------|------------|
@@ -459,10 +462,11 @@ sql
 | 104      | Math       | 3         |
 
 ---- Query ----
+```
 SELECT Students.StudentName, Courses.CourseName
 FROM Students
 FULL OUTER JOIN Courses ON Students.StudentID = Courses.StudentID;
-
+```
 ---- Result ----
 | StudentName | CourseName |
 |-------------|------------|
@@ -493,10 +497,11 @@ sql
 | 104      | Math       | 3         |
 
 ---- Query ----
+```
 SELECT Students.StudentName, Courses.CourseName
 FROM Students
 CROSS JOIN Courses;
-
+```
 ---- Result ----
 | StudentName | CourseName |
 |-------------|------------|
