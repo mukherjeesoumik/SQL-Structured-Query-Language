@@ -341,7 +341,6 @@ Description: Returns records that have matching values in both tables.
 
 Example:
 
-sql
 ---- Students ----
 | StudentID | StudentName |
 |-----------|-------------|
@@ -375,7 +374,6 @@ Description: Returns all records from the left table, and the matched records fr
 
 Example:
 
-sql
 ---- Students ----
 | StudentID | StudentName |
 |-----------|-------------|
@@ -410,7 +408,6 @@ Description: Returns all records from the right table, and the matched records f
 
 Example:
 
-sql
 ---- Students ----
 | StudentID | StudentName |
 |-----------|-------------|
@@ -445,7 +442,6 @@ Description: Returns all records when there is a match in either left or right t
 
 Example:
 
-sql
 ---- Students ----
 | StudentID | StudentName |
 |-----------|-------------|
@@ -480,7 +476,6 @@ Description: Returns the Cartesian product of the two tables, meaning it returns
 
 Example:
 
-sql
 ---- Students ----
 | StudentID | StudentName |
 |-----------|-------------|
