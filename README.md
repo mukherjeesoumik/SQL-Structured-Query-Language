@@ -358,7 +358,7 @@ sql
 | 104      | Math       | 3         |
 
 ---- Query ----
-```
+```cs
 SELECT Students.StudentName, Courses.CourseName
 FROM Students
 INNER JOIN Courses ON Students.StudentID = Courses.StudentID;
@@ -392,7 +392,7 @@ sql
 | 104      | Math       | 3         |
 
 ---- Query ----
-```
+```cs
 SELECT Students.StudentName, Courses.CourseName
 FROM Students
 LEFT JOIN Courses ON Students.StudentID = Courses.StudentID;
@@ -427,7 +427,7 @@ sql
 | 104      | Math       | 3         |
 
 ---- Query ----
-```
+```cs
 SELECT Students.StudentName, Courses.CourseName
 FROM Students
 RIGHT JOIN Courses ON Students.StudentID = Courses.StudentID;
@@ -462,7 +462,7 @@ sql
 | 104      | Math       | 3         |
 
 ---- Query ----
-```
+```cs
 SELECT Students.StudentName, Courses.CourseName
 FROM Students
 FULL OUTER JOIN Courses ON Students.StudentID = Courses.StudentID;
@@ -497,7 +497,7 @@ sql
 | 104      | Math       | 3         |
 
 ---- Query ----
-```
+```cs
 SELECT Students.StudentName, Courses.CourseName
 FROM Students
 CROSS JOIN Courses;
