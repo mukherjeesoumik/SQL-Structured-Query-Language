@@ -766,7 +766,7 @@ CROSS JOIN Courses;
 | Bob         | Science    |
 | Bob         | History    |
 
-## MAX AND MIN SAL
+## n(any) MAX AND MIN SAL
 ### MAX SAL
 ```cs
 SELECT DISTINCT e1.sal
@@ -775,7 +775,7 @@ WHERE n = (SELECT COUNT(DISTINCT e2.sal)
            FROM emp e2
            WHERE e2.sal > e1.sal);
 ```
-### MIN SAl
+### MIN SAL
 ```cs
 SELECT DISTINCT e1.sal
 FROM emp e1
