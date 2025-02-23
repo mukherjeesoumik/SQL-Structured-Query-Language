@@ -656,7 +656,7 @@ LEFT JOIN Courses ON Students.StudentID = Courses.StudentID;
 | John        | History    |
 | Alice       | Science    |
 | Bob         | Math       |
-| Alice       | NULL       |
+
 ## 3. RIGHT JOIN (or RIGHT OUTER JOIN)  <br>
 Description: Returns all records from the right table, and the matched records from the left table. The result is NULL from the left side when there is no match.
 
