@@ -284,7 +284,7 @@ Sets a point within a transaction to which you can roll back.
 SAVEPOINT savepoint_name;
 ```
 
-# (Structured Query Language) -----
+# (Structured Query Language) 
 
 ### Example 1: Simple SELECT Query
 Fetch all data from the employees table.
