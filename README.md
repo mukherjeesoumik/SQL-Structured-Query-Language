@@ -1,8 +1,8 @@
 # SQL (Structured Query Language)
 # Table of Contents
 
-
-2. [SQL | DDL, DQL, DML, DCL and TCL Commands](#SQL-DDL-DQL-DML-DCL-and-TCL-Commands)
+1. [ Order of execution in SQL queries ](#Order-of-execution-in-SQL-queries)
+2. [SQL | DDL, DQL, DML, DCL and TCL Commands](#DDL-DQL-DML-DCL-and-TCL-Commands)
 3. [Datatypes](#Datatypes)
 4. [Operators](#Operators)
 5. [if-else Statement](#if-else-Statement)
@@ -120,8 +120,7 @@ LIMIT/OFFSET: Specify the number of rows to return and where to start.
 ```
 
 
-
-# SQL | DDL, DQL, DML, DCL and TCL Commands
+# DDL-DQL-DML-DCL-and-TCL-Commands
 
 ## 1. DDL (Data Definition Language)
 DDL commands are used to define and manage database structures such as tables, indexes, and schemas. They are responsible for setting up the schema and defining the data structures.
