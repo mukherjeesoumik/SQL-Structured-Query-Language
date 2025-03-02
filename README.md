@@ -2,7 +2,7 @@
 # Table of Contents
 
 1. [ Order of execution in SQL queries ](#Order-of-execution-in-SQL-queries)
-2.[SQL | DDL, DQL, DML, DCL and TCL Commands](#SQL-DDL-DQL-DML-DCL-and-TCL-Commands)
+2. [SQL | DDL, DQL, DML, DCL and TCL Commands](#SQL-DDL-DQL-DML-DCL-and-TCL-Commands)
 3. [Datatypes](#Datatypes)
 4. [Operators](#Operators)
 5. [if-else Statement](#if-else-Statement)
