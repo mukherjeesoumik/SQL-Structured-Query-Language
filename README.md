@@ -1,5 +1,5 @@
 # SQL (Structured Query Language)
-# Table of Contents
+# Table of Contents (SQL)
 
 1. [ Order of execution in SQL queries ](#Order-of-execution-in-SQL-queries)
 2. [SQL | DDL, DQL, DML, DCL and TCL Commands](#DDL-DQL-DML-DCL-and-TCL-Commands)
