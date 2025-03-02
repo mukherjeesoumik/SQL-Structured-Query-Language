@@ -775,6 +775,7 @@ CROSS JOIN Courses;
 | Bob         | History    |
 
 ## ANY MAX AND MIN SAL
+ ANY(n) MAX AND MIN SAL
 ### MAX SAL
 ```cs
 SELECT DISTINCT e1.sal
