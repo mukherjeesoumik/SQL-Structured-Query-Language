@@ -1,7 +1,7 @@
 # SQL (Structured Query Language)
 # Table of Contents
 
-1. [ Order of execution in SQL queries ](##Order-of-execution-in-SQL-queries)
+1. [ Order of execution in SQL queries ](#Order-of-execution-in-SQL-queries)
 2. [Variable](#Variable)
 3. [Datatypes](#Datatypes)
 4. [Operators](#Operators)
