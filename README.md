@@ -6,7 +6,8 @@
 3. [Structured Query Language](#Structured-Query-Language)
 4. [SUBQUERY in SQL are queries nested inside another query](#SUBQUERY-in-SQL-are-queries-nested-inside-another-query)
 5. [if-else Statement](#if-else-Statement)
-6. [Sorting Algorithms in Java](#Sorting-Algorithms-in-Java)
+6. [JOIN ](#JOIN)
+7.  [ ANY(n) MAX AND MIN SAL](#ANY(n)-MAX-AND-MIN-SAL)
 
 ## emp
 
