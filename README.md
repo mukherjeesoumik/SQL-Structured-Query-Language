@@ -3,7 +3,7 @@
 
 1. [ Order of execution in SQL queries ](#Order-of-execution-in-SQL-queries)
 2. [SQL | DDL, DQL, DML, DCL and TCL Commands](#DDL-DQL-DML-DCL-and-TCL-Commands)
-3. [Structured Query Language](#(Structured-Query-Language))
+3. [Structured Query Language](#Structured-Query-Language)
 4. [Operators](#Operators)
 5. [if-else Statement](#if-else-Statement)
 6. [Sorting Algorithms in Java](#Sorting-Algorithms-in-Java)
@@ -284,7 +284,7 @@ Sets a point within a transaction to which you can roll back.
 SAVEPOINT savepoint_name;
 ```
 
-# (Structured-Query-Language) 
+# Structured Query Language
 
 ### Example 1: Simple SELECT Query
 Fetch all data from the employees table.
