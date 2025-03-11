@@ -120,6 +120,37 @@ LIMIT/OFFSET: Specify the number of rows to return and where to start.
 
 ```
 
+## Primary Key (PK)
+A Primary Key is a unique identifier for a record in a table.
+It ensures that each row in the table has a unique and non-null value.
+A table can have only one primary key, but it can consist of multiple columns (composite primary key).
+Automatically enforces uniqueness and NOT NULL constraints.
+Example:
+
+sql
+```cs
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY,  -- PK ensures unique and non-null values
+    name VARCHAR(100),
+    age INT
+);
+```
+## Foreign Key (FK)
+A Foreign Key is a field in one table that references the Primary Key of another table.
+It establishes a relationship between two tables.
+Ensures referential integrity, meaning the value in the foreign key column must exist in the referenced table.
+A table can have multiple foreign keys.
+Example:
+
+sql
+```cs
+CREATE TABLE Enrollments (
+    enrollment_id INT PRIMARY KEY,
+    student_id INT,
+    course_id INT,
+    FOREIGN KEY (student_id) REFERENCES Students(student_id) -- FK references PK of Students table
+);
+```
 
 # DDL-DQL-DML-DCL-and-TCL-Commands
 
