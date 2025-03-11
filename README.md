@@ -127,7 +127,6 @@ A table can have only one primary key, but it can consist of multiple columns (c
 Automatically enforces uniqueness and NOT NULL constraints.
 Example:
 
-sql
 ```cs
 CREATE TABLE Students (
     student_id INT PRIMARY KEY,  -- PK ensures unique and non-null values
@@ -142,7 +141,6 @@ Ensures referential integrity, meaning the value in the foreign key column must 
 A table can have multiple foreign keys.
 Example:
 
-sql
 ```cs
 CREATE TABLE Enrollments (
     enrollment_id INT PRIMARY KEY,
